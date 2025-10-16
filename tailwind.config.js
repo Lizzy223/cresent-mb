@@ -1,14 +1,12 @@
-module.exports = {
-    content: [
-        "./index.html",
-        "./src/**/*.{js,ts,jsx,tsx}"
-    ],
-    theme: {
-        extend: {
-            fontFamily: {
-                opensans: ['"OpenSans"', 'sans-serif'],
-            },
+export const content = [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}"
+];
+export const theme = {
+    extend: {
+        fontFamily: {
+            opensans: ['Lato', 'sans-serif'],
         },
     },
-    plugins: [],
 };
+export const plugins = [];

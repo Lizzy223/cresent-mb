@@ -52,10 +52,10 @@ const Services = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-blue-900 mb-4">
+          <h2 className="text-4xl font-[Lato] md:text-5xl font-bold text-blue-900 mb-4">
             Our Services
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-xl font-[Lato] text-gray-600 max-w-2xl mx-auto">
             Comprehensive financial solutions designed to meet your unique needs
           </p>
         </motion.div>
@@ -74,11 +74,11 @@ const Services = () => {
               <div className={`w-16 h-16 bg-gradient-to-br ${service.color} rounded-xl flex items-center justify-center mb-6`}>
                 <service.icon className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold text-blue-900 mb-3">{service.title}</h3>
-              <p className="text-gray-600 mb-4">{service.description}</p>
+              <h3 className="text-2xl font-bold font-[Lato] text-blue-900 mb-3">{service.title}</h3>
+              <p className="text-gray-600 font-[Lato] mb-4">{service.description}</p>
               <motion.button
                 whileHover={{ x: 5 }}
-                className="text-orange-600 font-semibold flex items-center gap-2 group"
+                className="text-orange-600 font-[Lato] font-semibold flex items-center gap-2 group"
               >
                 Learn More
                 <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />

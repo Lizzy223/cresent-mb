@@ -13,8 +13,8 @@ const Contact = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">Get In Touch</h2>
-          <p className="text-xl text-blue-100 max-w-2xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold font-[Lato] mb-4">Get In Touch</h2>
+          <p className="text-xl text-blue-100 max-w-2xl font-[Lato] mx-auto">
             Visit us at our office or reach out through any of our contact channels
           </p>
         </motion.div>
@@ -52,9 +52,9 @@ const Contact = () => {
               <div className={`w-16 h-16 bg-gradient-to-br ${contact.color} rounded-xl flex items-center justify-center mx-auto mb-6`}>
                 <contact.icon className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold mb-4">{contact.title}</h3>
+              <h3 className="text-2xl font-[Lato] font-bold mb-4">{contact.title}</h3>
               {contact.details.map((detail, j) => (
-                <p key={j} className="text-blue-100 mb-1">{detail}</p>
+                <p key={j} className="text-blue-100 font-[Lato] mb-1">{detail}</p>
               ))}
             </motion.div>
           ))}

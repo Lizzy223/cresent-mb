@@ -12,7 +12,7 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
         >
           <motion.h1 
-            className="text-5xl md:text-6xl font-bold mb-6"
+            className="text-5xl font-[Lato] md:text-6xl font-bold mb-6"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
@@ -21,7 +21,7 @@ const Hero = () => {
             <span className="text-orange-500"> Financial</span> Future
           </motion.h1>
           <motion.p
-            className="text-xl mb-8 text-blue-100"
+            className="text-xl mb-8 font-[Lato] text-blue-100"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4 }}
@@ -37,7 +37,7 @@ const Hero = () => {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-orange-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-orange-700 transition-colors flex items-center justify-center gap-2"
+              className="bg-orange-600 font-[Lato] text-white px-8 py-4 rounded-lg font-semibold hover:bg-orange-700 transition-colors flex items-center justify-center gap-2"
             >
               Open an Account
               <ArrowRight size={20} />
@@ -45,7 +45,7 @@ const Hero = () => {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-white text-blue-900 px-8 py-4 rounded-lg font-semibold hover:bg-blue-50 transition-colors"
+              className="bg-white text-blue-900 font-[Lato] px-8 py-4 rounded-lg font-semibold hover:bg-blue-50 transition-colors"
             >
               Learn More
             </motion.button>
@@ -77,18 +77,18 @@ const Hero = () => {
                     <Wallet className="w-6 h-6 text-blue-900" />
                   </div>
                   <div>
-                    <p className="text-sm text-gray-500">Total Balance</p>
-                    <p className="text-2xl font-bold text-blue-900">₦2,450,000</p>
+                    <p className="text-sm font-[Lato] text-gray-500">Total Balance</p>
+                    <p className="text-2xl font-[Lato] font-bold text-blue-900">₦2,450,000</p>
                   </div>
                 </div>
                 <TrendingUp className="w-8 h-8 text-green-500" />
               </div>
               <div className="flex gap-4">
-                <div className="flex-1 bg-blue-50 rounded-lg p-3">
+                <div className="flex-1 font-[Lato] bg-blue-50 rounded-lg p-3">
                   <p className="text-xs text-gray-600">Savings</p>
                   <p className="text-lg font-bold text-blue-900">₦1,800,000</p>
                 </div>
-                <div className="flex-1 bg-orange-50 rounded-lg p-3">
+                <div className="flex-1 font-[Lato] bg-orange-50 rounded-lg p-3">
                   <p className="text-xs text-gray-600">Loans</p>
                   <p className="text-lg font-bold text-orange-600">₦650,000</p>
                 </div>
@@ -109,7 +109,7 @@ const Hero = () => {
                   className="bg-white/20 backdrop-blur-sm rounded-xl p-4 text-center"
                 >
                   <item.icon className="w-8 h-8 text-white mx-auto mb-2" />
-                  <p className="text-white text-sm font-medium">{item.label}</p>
+                  <p className="text-white text-sm font-[Lato] font-medium">{item.label}</p>
                 </motion.div>
               ))}
             </div>

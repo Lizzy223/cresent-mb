@@ -17,14 +17,14 @@ const Footer = () => {
               </div>
             </div> */}
              <img src={logo} alt="Crescent Logo" className="h-10 w-auto"/>
-            <p className="text-blue-200 text-sm">
+            <p className="text-blue-200 font-[Lato] text-sm">
               Empowering communities through accessible financial services
             </p>
           </div>
 
           <div>
-            <h4 className="font-bold mb-4 text-orange-500">Quick Links</h4>
-            <ul className="space-y-2 text-sm">
+            <h4 className="font-bold mb-4 font-[Lato] text-orange-500">Quick Links</h4>
+            <ul className="space-y-2 font-[Lato] text-sm">
               {['About Us', 'Services', 'Careers', 'News'].map(link => (
                 <li key={link}>
                   <a href="#" className="text-blue-200 hover:text-orange-500 transition-colors">
@@ -37,7 +37,7 @@ const Footer = () => {
 
           <div>
             <h4 className="font-bold mb-4 text-orange-500">Services</h4>
-            <ul className="space-y-2 text-sm">
+            <ul className="space-y-2 font-[Lato] text-sm">
               {['Savings Account', 'Micro Loans', 'SME Banking', 'Investments'].map(service => (
                 <li key={service}>
                   <a href="#" className="text-blue-200 hover:text-orange-500 transition-colors">
@@ -50,7 +50,7 @@ const Footer = () => {
 
           <div>
             <h4 className="font-bold mb-4 text-orange-500">Legal</h4>
-            <ul className="space-y-2 text-sm">
+            <ul className="space-y-2 font-[Lato] text-sm">
               {['Privacy Policy', 'Terms of Service', 'Compliance', 'Security'].map(legal => (
                 <li key={legal}>
                   <a href="#" className="text-blue-200 hover:text-orange-500 transition-colors">
@@ -62,9 +62,9 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-blue-800 pt-8 text-center text-sm text-blue-300">
+        <div className="border-t border-blue-800 font-[Lato] pt-8 text-center text-sm text-blue-300">
           <p>&copy; 2025 Crescent Microfinance Bank Limited. All rights reserved.</p>
-          <p className="mt-2">Licensed by CBN | NDIC Insured</p>
+          <p className="mt-2 font-[Lato]">Licensed by CBN | NDIC Insured</p>
         </div>
       </div>
     </footer>

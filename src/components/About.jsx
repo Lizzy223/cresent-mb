@@ -29,16 +29,16 @@ const About = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-blue-900 mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold font-[Lato] text-blue-900 mb-6">
               About Crescent Microfinance Bank
             </h2>
-            <p className="text-gray-600 mb-6 text-lg leading-relaxed">
+            <p className="text-gray-600 mb-6 font-[Lato] text-lg leading-relaxed">
               We are a leading microfinance institution in Ilorin, Kwara State, dedicated to providing accessible financial services to individuals and small businesses. Our mission is to empower our community through inclusive banking.
             </p>
-            <p className="text-gray-600 mb-8 text-lg leading-relaxed">
+            <p className="text-gray-600 mb-8 font-[Lato] text-lg leading-relaxed">
               With over a decade of experience, we have built trust by delivering personalized financial solutions that help our customers achieve their dreams and grow their businesses.
             </p>
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-2 font-[Lato] gap-4">
               {features.map((feature, i) => (
                 <motion.div
                   key={feature}
@@ -79,11 +79,11 @@ const About = () => {
                       whileInView={{ scale: 1 }}
                       viewport={{ once: true }}
                       transition={{ delay: i * 0.1 + 0.2, type: "spring" }}
-                      className="text-4xl font-bold text-orange-500 mb-2"
+                      className="text-4xl font-bold font-[Lato] text-orange-500 mb-2"
                     >
                       {stat.value}
                     </motion.p>
-                    <p className="text-white text-sm font-medium">{stat.label}</p>
+                    <p className="text-white text-sm font-[Lato] font-medium">{stat.label}</p>
                   </motion.div>
                 ))}
               </div>
