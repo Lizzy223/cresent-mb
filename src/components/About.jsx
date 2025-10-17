@@ -4,41 +4,45 @@ import { motion } from 'framer-motion';
 import { Check } from 'lucide-react';
 
 const About = () => {
-  const stats = [
-    { value: '10+', label: 'Years of Service' },
-    { value: '50K+', label: 'Happy Customers' },
-    { value: '₦5B+', label: 'Loans Disbursed' },
-    { value: '99%', label: 'Satisfaction Rate' }
+    const stats = [
+    { value: 'Leading', label: 'MFB in Kwara' },
+    { value: 'Expert', label: 'Advisory Team' },
+    { value: 'SME', label: 'Focus Areas' },
+    { value: '100%', label: 'Commitment' }
   ];
 
   const features = [
     'CBN Licensed & Regulated',
     'NDIC Insured Deposits',
-    'Digital Banking Services',
-    'Quick Loan Approval',
-    '24/7 Customer Support',
-    'Multiple Branch Network'
+    'Physical & Financial Advisory',
+    'Technical Business Support',
+    'Credit Facilities for SMEs',
+    'Economic Venture Financing'
   ];
+
 
   return (
     <section id="about" className="py-20 px-4 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
-          <motion.div
+           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl md:text-5xl font-bold font-[Lato] text-blue-900 mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-blue-900 mb-6">
               About Crescent Microfinance Bank
             </h2>
-            <p className="text-gray-600 mb-6 font-[Lato] text-lg leading-relaxed">
-              We are a leading microfinance institution in Ilorin, Kwara State, dedicated to providing accessible financial services to individuals and small businesses. Our mission is to empower our community through inclusive banking.
+            <p className="text-gray-600 mb-6 text-lg leading-relaxed">
+              Crescent Micro Finance Bank evolves with a vision to provide the capital base for economic ventures. We advance credit facilities to small and medium business units which are key players in the micro economic sector.
             </p>
-            <p className="text-gray-600 mb-8 font-[Lato] text-lg leading-relaxed">
-              With over a decade of experience, we have built trust by delivering personalized financial solutions that help our customers achieve their dreams and grow their businesses.
+            <p className="text-gray-600 mb-6 text-lg leading-relaxed">
+              While we launch out with credit assistance to the micro sector of our economy, we are mindful of the impact of sustainable macroeconomic activities within the economic system. We are ready to synergize with firms and multinational companies for maximum result.
             </p>
-            <div className="grid grid-cols-2 font-[Lato] gap-4">
+            <p className="text-gray-600 mb-8 text-lg leading-relaxed">
+              At Crescent Micro Finance Bank, we have assembled experts ready to offer physical, financial and technical advice to promote economic activities and rejuvenate moribund business ventures.
+            </p>
+            <div className="grid grid-cols-2 gap-4">
               {features.map((feature, i) => (
                 <motion.div
                   key={feature}
@@ -79,7 +83,7 @@ const About = () => {
                       whileInView={{ scale: 1 }}
                       viewport={{ once: true }}
                       transition={{ delay: i * 0.1 + 0.2, type: "spring" }}
-                      className="text-4xl font-bold font-[Lato] text-orange-500 mb-2"
+                      className="text-2xl sm:text-4xl font-bold font-[Lato] text-orange-500 mb-2"
                     >
                       {stat.value}
                     </motion.p>

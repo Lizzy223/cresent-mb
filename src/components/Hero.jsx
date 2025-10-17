@@ -6,27 +6,27 @@ const Hero = () => {
   return (
     <section id="home" className="pt-32 pb-20 px-4 bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 text-white overflow-hidden">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-        <motion.div
+         <motion.div
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
         >
           <motion.h1 
-            className="text-5xl font-[Lato] md:text-6xl font-bold mb-6"
+            className="text-5xl md:text-6xl font-bold mb-6"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
           >
-            Empowering Your
-            <span className="text-orange-500"> Financial</span> Future
+            Partner With Us to
+            <span className="text-orange-500"> Grow</span> Your Business
           </motion.h1>
           <motion.p
-            className="text-xl mb-8 font-[Lato] text-blue-100"
+            className="text-xl mb-8 text-blue-100"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4 }}
           >
-            Trusted microfinance solutions for individuals and businesses in Ilorin, Kwara State
+            Providing the capital base for economic ventures. Comprehensive financial services for small and medium business units in Ilorin, Kwara State.
           </motion.p>
           <motion.div
             className="flex flex-col sm:flex-row gap-4"
@@ -37,7 +37,7 @@ const Hero = () => {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-orange-600 font-[Lato] text-white px-8 py-4 rounded-lg font-semibold hover:bg-orange-700 transition-colors flex items-center justify-center gap-2"
+              className="bg-orange-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-orange-700 transition-colors flex items-center justify-center gap-2"
             >
               Open an Account
               <ArrowRight size={20} />
@@ -45,7 +45,7 @@ const Hero = () => {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-white text-blue-900 font-[Lato] px-8 py-4 rounded-lg font-semibold hover:bg-blue-50 transition-colors"
+              className="bg-white text-blue-900 px-8 py-4 rounded-lg font-semibold hover:bg-blue-50 transition-colors"
             >
               Learn More
             </motion.button>

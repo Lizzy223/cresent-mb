@@ -24,13 +24,13 @@ const Contact = () => {
             {
               icon: MapPin,
               title: 'Visit Us',
-              details: ['Ago Market, Behind Emir\'s Palace', 'Ilorin, Kwara State, Nigeria'],
+              details: ['9, Olatinwo Plaza, Opposite St. Charles', 'Nursery and Primary School', 'Offa Garage, Ilorin, Kwara State'],
               color: 'from-orange-500 to-orange-600'
             },
             {
               icon: Phone,
               title: 'Call Us',
-              details: ['+234 (0) 803 XXX XXXX', '+234 (0) 805 XXX XXXX'],
+              details: ['0813 563 7313', 'Mon - Fri: 8:00 AM - 5:00 PM'],
               color: 'from-blue-600 to-blue-700'
             },
             {
@@ -52,9 +52,9 @@ const Contact = () => {
               <div className={`w-16 h-16 bg-gradient-to-br ${contact.color} rounded-xl flex items-center justify-center mx-auto mb-6`}>
                 <contact.icon className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-2xl font-[Lato] font-bold mb-4">{contact.title}</h3>
+              <h3 className="text-2xl font-bold mb-4">{contact.title}</h3>
               {contact.details.map((detail, j) => (
-                <p key={j} className="text-blue-100 font-[Lato] mb-1">{detail}</p>
+                <p key={j} className="text-blue-100 mb-1">{detail}</p>
               ))}
             </motion.div>
           ))}

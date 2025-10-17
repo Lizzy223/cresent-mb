@@ -50,12 +50,21 @@ const Services = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-20"
         >
-          <h2 className="text-4xl font-[Lato] md:text-5xl font-bold text-blue-900 mb-4">
+
+        <motion.div
+            initial={{ scale: 0 }}
+            whileInView={{ scale: 1 }}
+            viewport={{ once: true }}
+            className="inline-block bg-orange-100 px-6 py-2 rounded-full mb-4"
+          >
+            <span className="text-orange-600 font-semibold">What We Offer</span>
+          </motion.div>
+          <h2 className="text-4xl md:text-5xl font-bold text-blue-900 mb-6">
             Our Services
           </h2>
-          <p className="text-xl font-[Lato] text-gray-600 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Comprehensive financial solutions designed to meet your unique needs
           </p>
         </motion.div>
